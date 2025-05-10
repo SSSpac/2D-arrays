@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="students" style="font-size: 40px;"></div>
+</body>
+
+<script>
+    var students = [
+        ["yaronb", "ahmad", "khalid"],
+        ["omar", "jabir", "sami"],
+        ["slmon", "Tuna", "monsta"],
+        ["cheetos","bam", "karaka"]
+    ];
+
+    for (var i =0;  i< students.length; i++){
+        
+          document.getElementById("students").innerHTML += "class" + (i+1) +  students[i] + "<br>"
+
+  /* document.getElementById("students").innerHTML += "class1" + students[i] + "<br>"
+    else if (i == 1)
+        document.getElementById("students").innerHTML += "class2" + students[i] + "<br>"
+    else if (i == 2)
+        document.getElementById("students").innerHTML += "class3" + students[i] + "<br>"
+    */ }
+    
+</script>
+</html>
