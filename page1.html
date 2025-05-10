@@ -19,7 +19,15 @@
 
     for (var i =0;  i< students.length; i++){
         
-          document.getElementById("students").innerHTML += "class" + (i+1) +  students[i] + "<br>"
+
+     var currentClass = students[i];
+     document.getElementById("students").innerHTML += "<br>" + ` <h1>class ${i+1}</h1>` + "<br>" + "<hr>";
+ 
+     for (var j = 0; j < currentClass.length; j++){
+        var currentStudent = currentClass[j];
+        document.getElementById("students").innerHTML += currentStudent + "<br>"
+     }
+
 
   /* document.getElementById("students").innerHTML += "class1" + students[i] + "<br>"
     else if (i == 1)
